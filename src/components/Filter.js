@@ -7,7 +7,7 @@ const Filter = () => {
             const { value } = e.target
             const countryName = document.querySelectorAll('.country-name')
             countryName.forEach((name)=>{
-                if (name.innerText.toLowerCase().includes(value.toLowerCase)) {
+                if (name.innerText.toLowerCase().includes(value.toLowerCase())) {
                     name.parentElement.parentElement.style.display='block'
                 } else {
                     name.parentElement.parentElement.style.display='none'
